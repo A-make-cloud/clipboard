@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,500;1,700&family=Roboto:wght@300;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Bai Jamjuree', sans-serif;
+
+}
+
+header {
+    padding: 80px;
+}
+
+footer {
+    background-color: #f5f6f8;
+    padding: 70px;
+    display: inline-block;
+    width: 100vw;
+    margin: auto;
+    text-align: center;
+}
+
+p {
+    font-family: 'Bai Jamjuree';
+    font-weight: 400;
+    padding: 30px;
+    line-height: 20px;
+}
+
+h2,
+h3 {
+    font-family: 'Bai Jamjuree';
+    font-weight: 600;
+}
+
+/* //les positionnements */
+.d-flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.align-items-ce {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* //espacer tous les blocs */
+.padding-30 {
+    padding: 30px;
+}
+
+/* //LIENS */
+a,
+li {
+    list-style: none;
+    font-weight: bolder;
+}
+
+a:hover,
+li:hover {
+    color: hsl(171, 66%, 44%);
+    list-style: none;
+}
+
+a>img:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+#banniere,
+#anywhere,
+.logo {
+    background-color: #f5f6f8;
+}
+
+#anywhere img {
+    width: 50vw;
+
+}
+
+
+/* //LES BOUTONS */
+.telecharger {
+    display: grid;
+    grid-gap: 5px;
+}
+
+.telecharger a:nth-child(1) {
+    color: white;
+    background-color: hsl(171, 66%, 44%);
+    padding: 10px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.telecharger a:nth-child(2) {
+    color: white;
+    background-color: hsl(233, 100%, 69%);
+    padding: 10px 22px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.comput_left img {
+    width: 50vw;
+}
+
+.comput_right {
+    margin: 0 20px;
+}
+
+.blacklists {
+    margin: auto;
+    width: 60vw;
+
+}
+
+.logo>.sous_conteneur {
+    text-align: center;
+}
+
+.sous_conteneur img {
+    margin: 17px;
+}
+
+
+.foot_5 {
+    width: 150px;
+    margin: auto;
+}
+
+@media screen and (max-width: 375px) {
+    header {
+        background-image: url(images/bg-header-mobile.png);
+        background-repeat: no-repeat;
+
+    }
+
+    footer {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "foot_1", "foot_2", "foot_3", "foot_4", "foot_5";
+    }
+
+    /* //pour que la partie droite s'aligne sous l'écran */
+    .comput {
+        display: block;
+    }
+
+
+
+    .comput_right {
+        width: 90vw;
+        margin: auto;
+    }
+
+    img {
+        max-width: 300px;
+    }
+
+    #conteneur {
+        margin: 0;
+        width: 375px;
+        display: grid;
+        /* grid-template-rows: 1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr; */
+        grid-template-rows: repeat(11, 2fr);
+        grid-template-areas: "content_1", "content_2", "content_3", "content_4", "content_5", "content_6", "content_7", "content_8", "content_9", "content_10", "content_11";
+    }
+
+    .sous_conteneur {
+        width: 300px;
+
+    }
+
+}
+
+@media screen and(max-width:768px) {
+    .comput {
+        display: flex;
+    }
+}
+
+
+
+@media screen and (min-width: 992px) {
+    header {
+        background-image: url(images/bg-header-desktop.png);
+        background-repeat: no-repeat;
+    }
+
+    .comput {
+        width: 90vw;
+        margin: auto;
+        display: flex;
+        margin: 10px;
+        justify-content: flex-start;
+    }
+
+
+
+
+    .telecharger {
+        display: flex;
+        justify-content: center;
+    }
+
+    #anywhere img {
+        width: 70vw;
+        margin: auto;
+    }
+
+    .blacklists {
+        display: flex;
+    }
+
+    .logo {
+        display: flex;
+    }
+
+    .download {
+        margin: 10px 0 20px;
+    }
+
+    #foot-_copyright img {
+        width: 10%;
+    }
+
+    footer {
+        background-color: #f5f6f8;
+        padding: 70px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer svg,
+    footer ul {
+        margin-right: 15px;
+    }
+
+    .link_reseau {
+        width: 150%;
+    }
+}
