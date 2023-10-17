@@ -147,7 +147,7 @@ a>img:hover {
     header {
         background-image: url(images/bg-header-mobile.png);
         background-repeat: no-repeat;
-background-size: cover;
+        background-size: cover;
     }
 
     footer {
@@ -200,6 +200,7 @@ background-size: cover;
     header {
         background-image: url(images/bg-header-desktop.png);
         background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .comput {
